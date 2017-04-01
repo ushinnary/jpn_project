@@ -1,0 +1,1161 @@
+body {
+ padding: 0px;
+ margin: 0px;
+}
+#opora.opora #menu-opora{
+  vertical-align: middle;
+width: 25px;
+height: 25px;
+cursor: pointer;
+position: absolute;
+top: 15px;
+right: 30px;
+display: none;
+background: white;
+border-radius: 10%;
+}
+#opora.opora #menu-opora span:nth-child(1){
+  margin-top: 3px;
+}
+#opora.opora #menu-opora span{
+  height: 3px;
+background: black;
+margin-bottom: 5px;
+display: block;
+width: 90%;
+margin-left: 5%;
+border-radius: 40%;
+}
+#opora #nv{
+  display: none;
+}
+#opora.opora #sidebar{
+  display: none;
+}
+#opora.opora #nv{
+  height: 50px;
+  position: sticky;
+  display: block!important;
+  background: #EA6045;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+}
+#opora.opora #fixed-bg{
+  background: none;
+}
+#opora.opora #main,
+#opora.opora #main-lessons,
+#opora.opora #main-tests,
+#opora.opora #main-themes{
+  height: 100%;
+width: 80%;
+margin-left: 10%;
+overflow-y:hidden;
+background: none;
+color: black;
+}
+#opora.opora #nv ul{
+  display: flex;
+text-align: center;
+justify-content: center;
+}
+#opora.opora #nv ul li{
+  list-style: none;
+  height: 50px;
+  padding: 0 10px 0 10px;
+}
+#opora.opora #nv ul li a:hover{
+background: white;
+color: black;
+}
+#opora.opora #nv ul li a{
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 30px;
+  border-bottom: none;
+}
+#test-error,#test-ostatok,#test-good{
+  width: 33%;
+  text-align: center;
+  color: black;
+  height: 40px;
+font-size: 35px;
+}
+#flex{
+  display: flex;
+  height: 20%;
+}
+#test-question{
+  display: flex;
+justify-content: center;
+width: 100%;
+height: 50%;
+font-size: 30vh;
+}
+#test-response{
+  display: flex;
+  justify-content: center;
+}
+#test-error{
+  color: red;
+}
+#test-good{
+  color: lime;
+}
+.modal-container a{
+  position: fixed;
+right: 15px;
+font-size: 22px;
+text-decoration: none;
+color: black;
+border: 1px solid;
+border-radius: 41px;
+padding: 6px;
+height: 28px;
+width: 28px;
+text-align: center;
+}
+.modal-container{
+  position: fixed;
+  background-color: #fff;
+  border: 1px solid #000;
+  left: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  width: 70vw;
+  -webkit-transform: translate(-50%, -1000%);
+  -ms-transform: translate(-50%, -1000%);
+  transform: translate(-50%, -1000%);
+  height: 70vh;
+  color: black;
+  z-index: 2;
+}
+.modal:before{
+  content:"";
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.modal:target:before{
+  display: block;
+}
+.modal:target .modal-container{
+  top: 13%;
+  -webkit-transform:translate(-50%, 0);
+  -ms-transform:translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.test-check button{
+display: inline-block;
+margin-left: 12%;
+margin-top: 10%;
+}
+#opora.blue #fixed-bg{
+ padding: 0px;
+margin: 0px;
+background: #e9ebee;
+}
+#opora.contrasted #fixed-bg{
+ background: black;
+}
+#opora #fixed-bg{
+ background: url(http://www.artsfon.com/pic/201503/1920x1080/artsfon.com-67361.jpg);
+        position: fixed;
+        background-size: cover;
+        width: 100%;
+ height: 100%;
+ z-index: -1;
+}
+#opora #sidebar {
+ background-color:rgba(0,0,0,0.8);
+ width: 13%;
+ height: 100%;
+ display: block;
+ position: fixed;
+ left: -13%;
+ top:   0px;
+ transition: 0.1s linear;
+   z-index: 1;
+}
+#opora.blue #sidebar{
+ background: deepskyblue;
+}
+#opora #sidebar.visible{
+ left: 0px;
+   transition: 0.1s linear;
+}
+#opora ul{
+ padding: 0px;
+ margin: 0px;
+}
+#opora ul li{
+ list-style: none;
+}
+#opora ul li a{
+ color: white;
+ border-bottom: 1px solid white;
+ display: flex;
+ justify-content: center;
+ width: 100%;
+ padding: 10px 0 10px 0;
+ text-decoration: none;
+ font-size: 30px;
+}
+#opora ul li a:hover{
+ background: white;
+ color: black;
+}
+#opora.blue ul li a:hover{
+ background: crimson;
+ color: black;
+}
+#opora.blue ul li a{
+ background: #00ff03;
+ color: black;
+}
+#opora.blue ul li a{
+border-bottom: 1px solid #111;
+background: deepskyblue;
+}
+#opora #sidebar-btn{
+ display: inline-block;
+ vertical-align: middle;
+ width: 20px;
+ height: 15px;
+ cursor:pointer;
+ margin: 20px;
+ position: absolute;
+ top: 0px;
+ right: -60px;
+}
+#opora #sidebar-btn span{
+ height: 3px;
+ background: white;
+ margin-bottom: 5px;
+ display:block;
+ width: 100%;
+}
+#opora.blue #sidebar-btn span{
+ background: black;
+}
+#opora.blue #main.positioned{
+ background: white;
+ color:black;
+ height: 100vh;
+ width: 87%;
+ margin-left: 13%;
+ margin-top: 0px;
+}
+#opora.blue #main-themes.positioned,
+#opora.blue #main-lessons.positioned,
+#opora.blue #main-tests.positioned{
+ background: white;
+ color:black;
+ height: 100vh;
+ width: 87%;
+ margin-left: 13%;
+ margin-top: 0px;
+}
+#opora.blue #main{
+ background: white;
+ color:black;
+ height: 100vh;
+ width:100%;
+ opacity: 1;
+ margin-left: 0px;
+ margin-top: 0px;
+}
+#opora.blue #main-themes,
+#opora.blue #main-lessons,
+#opora.blue #main-tests{
+ background: white;
+ color:black;
+ margin-left: 0px;
+ margin-top: 0px;
+ opacity: 1;
+ height: 100vh;
+}
+#opora.contrasted #main,
+#main-lessons,
+#main-themes,
+#main-tests{
+ transition: 0.1s linear;
+}
+#opora.contrasted #main.positioned,
+#opora.contrasted #main-tests.positioned,
+#opora.contrasted #main-themes.positioned,
+#opora.contrasted #main-lessons.positioned{
+ transition: 0.1s linear;
+}
+#opora #main.positioned,
+#opora #main-themes.positioned,
+#opora #main-lessons.positioned,
+#opora #main-tests.positioned{
+ width: 87%;
+ margin-left: 13%;
+ transition: 0.1s linear;
+}
+#opora #main{
+ background-color: rgba(0, 0, 0, 0.8);
+ color:white;
+ height: 100vh;
+ width:100%;
+ margin-left: 0;
+ margin-top: 0;
+ transition: 0.1s linear;
+}
+#opora #main-themes,#main-lessons,#main-tests{
+ background-color: rgba(0, 0, 0, 0.8);
+ color:white;
+ height: 100vh;
+ width:100%;
+ margin-left: 0;
+ margin-top: 0;
+ transition: 0.1s linear;
+ display: none;
+ overflow-y: scroll;
+}
+#opora #main h1 {
+ display: flex;
+ justify-content: center;
+ border-bottom: 1px solid;
+ margin: auto;
+ padding: 9px;
+}
+#opora #main-tests h1 {
+ display: flex;
+ justify-content: center;
+ border-bottom: 1px solid;
+ margin: auto;
+ padding: 9px;
+}
+#opora #main-themes h1 {
+ display: flex;
+ justify-content: center;
+ border-bottom: 1px solid;
+ margin: auto;
+ padding: 9px;
+}
+h2{
+ margin-left: 10%;
+ margin-right: 10%;
+}
+#opora #main-lessons h1 {
+ display: flex;
+ justify-content: center;
+ border-bottom: 1px solid;
+ margin: auto;
+ padding: 9px;
+}
+#opora #main-lessons h2.zhirniy{
+ display: block;
+font-size: 35px;
+border-bottom: 1px solid;
+width: -moz-max-content;
+margin: 20px 0 20px 50px;
+}
+.kana{
+display: flex;
+}
+.kana th,td{
+ border: 1px solid;
+ text-align: center;
+}
+.kana table{
+  font-size: 27px;
+  justify-content: center;
+  border-spacing: 5px 5px;
+  width: 40%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.themes {
+ max-width: 400px;
+ height: 232px;
+ margin: 20px;
+ display: inline-block;
+ position: relative;
+}
+.themes img{
+ width: 400px;
+ height: 200px;
+}
+.themes button{
+ font-size: 18px;
+width: 100%;
+margin-top: -6px;
+border: 0px solid;
+padding: 3px;
+}
+.themes button:hover{
+color: white;
+background: deepskyblue;
+}
+#opora #main-lessons td{
+  background:#EA6045;
+font-size: 20px;
+width: 250px;
+padding: 5px;
+text-align: center;
+border: 0;
+}
+#opora #main-lessons table{
+ display: flex;
+ justify-content: center;
+ width: 100%;
+}
+h2.zagolovok{
+ text-align: center;
+ border:1px solid;
+ font-size: 28px;
+}
+#opora #main-lessons h3{
+ font-size: 20px;
+ margin-left: 10%;
+ margin-right: 10%;
+}
+.left{
+ float: left;
+ width: 50%;
+ text-align: center;
+}
+.right{
+ float: right;
+ width: 50%;
+ text-align: center;
+}
+#opora #main-lessons b{
+ font-size: 22px;
+}
+#opora #main-lessons table tr td b{
+ font-size: 20px;
+}
+.ramka{
+ color: red;
+}
+#opora #main-lessons table.present{
+display: inline-table;
+}
+#opora #main-lessons table.present tr td{
+ border: 0;
+ text-align: center;
+ background: transparent;
+}
+.pokazat{
+ display: block!important;
+}
+.skrit{
+ display: none!important;
+}
+@media all and (max-width:480px) and (min-width:320px) and (orientation:portrait) {
+  .kana{
+    display: block;
+  }
+  .kana table {
+    font-size: 28px;
+    justify-content: center;
+    border-spacing: 5px 5px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+#opora.opora #menu-opora{
+  display: inline-block;
+}
+#opora.opora #nv ul{
+  display: none;
+  position: relative;
+top: 50px;
+}
+#opora.opora #nv ul li{
+border-bottom: 1px solid;
+padding: 0;
+}
+#opora.opora #nv ul li:nth-child(1){
+border-top: 1px solid;
+}
+#opora.opora #nv ul.visible{
+  display: block!important;
+}
+#opora.opora #nv ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    background: #EA6045;
+border-bottom: 1px solid black;
+line-height: 50px;
+}
+#opora.opora #nv ul li a:hover{
+   background: crimson;
+}
+#opora #main-lessons table.present tr td{
+   border: 0;
+   text-align: center;
+   font-size: 20px;
+ }
+ #opora #sidebar-btn{
+   right: -100%;
+   transition: 0.1s linear;
+   background: white;
+   height: 36px;
+   width: 36px;
+   border-radius: 100%;
+   opacity: 0.7;
+  margin: 20% 0 0 0;
+ }
+ #opora #sidebar.visible #sidebar-btn{
+   right: 0;
+ }
+ #opora.blue #sidebar-btn span:nth-child(2){
+   border:1px solid white;
+ }
+ #opora.blue #sidebar-btn{
+   background: black;
+ }
+ #opora.blue #sidebar-btn span:nth-child(1){
+   background: white;
+ }
+ #opora.blue #sidebar-btn span:nth-child(3){
+   background: white;
+ }
+ #opora #sidebar-btn span{
+   margin-top: 5px;
+   background: black;
+   margin-bottom: 4px;
+   display: block;
+ }
+ #opora #main,
+ #opora #main-lessons,
+ #opora #main-tests,
+ #opora #main-themes{
+   background-color: rgba(0, 0, 0, 0.5);
+   transition: 0.1s linear;
+ }
+ #opora.opora #main,
+ #opora.opora #main-lessons,
+ #opora.opora #main-tests,
+ #opora.opora #main-themes{
+   height: calc(100vh - 50px);
+   width: 100%;
+   margin-left: 0%;
+       overflow-y: scroll;
+ }
+ #opora #sidebar ul li a{
+   font-size: 40px;
+ }
+ #opora #main-lessons table tr td b{
+   font-size: 16px;
+ }
+ #opora #fixed-bg{
+   background: url(http://www.inspiringwallpapers.net/content/uploads/download-iPhone-6Plus/mt-fuji-japan-view-from-kitadake-fuji-red-fuji.jpg);
+   position: fixed;
+   background-size: cover;
+   width: 100vw;
+   height: 100vh;
+   z-index: -1;
+}
+ #opora #sidebar-btn span:nth-child(1){
+   height: 0;
+ }
+ #opora #sidebar-btn span:nth-child(2){
+   border: 1px solid;
+   border-radius: 100%;
+   background: transparent;
+   width: 28px;
+   margin-left: 3px;
+   height: 28px;
+   margin-top: -2px;
+ }
+ #opora #sidebar-btn span:nth-child(3){
+   height: 0;
+ }
+ #opora #main-lessons b{
+   font-size: 16px;
+ }
+ #opora #main-lessons h3{
+   font-size: 16px;
+   margin-left: 5%;
+   margin-right: 5%;
+ }
+ #opora #main-lessons h3.nachalo{
+   font-size: 14px;
+   text-transform: uppercase;
+ }
+ #opora #sidebar{
+   width: 100%;
+   left:-100%;
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+ #opora #sidebar ul li:nth-child(1){
+     margin-top:20%;
+ }
+ #opora #main.positioned,
+#opora #main-lessons.positioned,
+#opora #main-tests.positioned,
+#opora #main-themes.positioned{
+   margin-left: -100%;
+   width: 100%;
+   transition: 0.1s linear;
+ }
+ #opora #main-tests{
+   height: 100%;
+ }
+#opora.blue #main.positioned,
+#opora.blue #main-tests.positioned,
+#opora.blue #main-themes.positioned,
+#opora.blue #main-lessons.positioned{
+   margin-left: -100%;
+   width: 100%;
+   transition: 0.1s linear;
+ }
+ #opora #main-lessons table{
+   padding: 0px;
+ }
+ #opora #main-lessons h2.zhirniy{
+   width: auto;
+   border:none;
+   font-size: 26px;
+ }
+ #opora #main-lessons td{
+   font-size: 16px;
+   padding: 2px 0 2px 0;
+ }
+ #opora #main h2{
+   padding: 20px;
+ }
+ #opora #main-tests .leftmain{
+   height: 100%;
+   width: 100%;
+   float: none;
+ }
+ #opora #main-tests .leftmain table{
+   font-size: 27px;
+   display: flex;
+   justify-content: center;
+   border-spacing: 5px 5px;
+ }
+ #opora #main-tests .rightmain table{
+   font-size: 27px;
+   display: flex;
+   justify-content: center;
+   border-spacing: 5px 5px;
+ }
+ #opora #main-tests .rightmain{
+   height: 100%;
+   width: 100%;
+   float: none;
+ }
+ #opora #main h1{
+   margin-left: 35px;
+   margin-top:0;
+ }
+ .themes{
+   margin:0;
+   width: 100%;
+   height: 200px;
+ }
+ .themes img{
+   width: 100%;
+   height: 200px;
+ }
+}
+@media all and (max-width:680px) and (orientation:landscape){
+  .kana{
+    display: block;
+  }
+  .kana table {
+    font-size: 28px;
+    justify-content: center;
+    border-spacing: 5px 5px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+#opora.opora #menu-opora{
+  display: inline-block;
+}
+#opora.opora #nv ul{
+  display: none;
+  position: relative;
+top: 50px;
+}
+#opora.opora #nv ul li{
+border-bottom: 1px solid;
+padding: 0;
+}
+#opora.opora #nv ul li:nth-child(1){
+border-top: 1px solid;
+}
+#opora.opora #nv ul.visible{
+  display: block!important;
+}
+#opora.opora #nv ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    background: #EA6045;
+border-bottom: 1px solid black;
+line-height: 50px;
+}
+#opora.opora #nv ul li a:hover{
+   background: crimson;
+}
+ #opora #main-lessons table.present tr td{
+   border: 0;
+   text-align: center;
+   font-size: 20px;
+ }
+ #opora #sidebar-btn{
+   right: -100%;
+   transition: 0.1s linear;
+   background: white;
+   height: 36px;
+   width: 36px;
+   border-radius: 100%;
+   opacity: 0.7;
+  margin: 8% 0 0 0;
+ }
+#opora  #sidebar.visible #sidebar-btn{
+   right: 0;
+ }
+ #opora.blue #sidebar-btn span:nth-child(2){
+   border:1px solid white;
+ }
+ #opora.blue #sidebar-btn{
+   background: black;
+ }
+ #opora.blue #sidebar-btn span:nth-child(1){
+   background: white;
+ }
+ #opora.blue #sidebar-btn span:nth-child(3){
+   background: white;
+ }
+ #opora #sidebar-btn span{
+   margin-top: 5px;
+   background: black;
+   margin-bottom: 4px;
+   display: block;
+ }
+ #opora #main,
+ #opora #main-lessons,
+ #opora #main-tests,
+ #opora #main-themes{
+   background-color: rgba(0, 0, 0, 0.5);
+   transition: 0.1s linear;
+ }
+ #opora.opora #main,
+ #opora.opora #main-lessons,
+ #opora.opora #main-tests,
+ #opora.opora #main-themes{
+   height: 100%;
+   width: 100%;
+   margin-left: 0%;
+ }
+ #opora #sidebar ul li a{
+   font-size: 36px;
+ }
+ #opora #main-lessons table tr td b{
+   font-size: 16px;
+ }
+#opora #fixed-bg{
+   background: url(http://www.artsfon.com/pic/201503/1920x1080/artsfon.com-67361.jpg);
+   position: fixed;
+   background-size: cover;
+   width: 100vw;
+   height: 100vh;
+   z-index: -1;
+}
+ #opora #sidebar-btn span:nth-child(1){
+   height: 0;
+ }
+ #opora #sidebar-btn span:nth-child(2){
+   border: 1px solid;
+   border-radius: 100%;
+   background: transparent;
+   width: 28px;
+   margin-left: 3px;
+   height: 28px;
+   margin-top: -2px;
+ }
+ #opora #sidebar-btn span:nth-child(3){
+   height: 0;
+ }
+ #opora #main-lessons b{
+   font-size: 16px;
+ }
+ #opora #main-lessons h3{
+   font-size: 16px;
+   margin-left: 5%;
+   margin-right: 5%;
+ }
+ #opora #main-lessons h3.nachalo{
+   font-size: 14px;
+   text-transform: uppercase;
+ }
+ #opora #sidebar{
+   width: 100%;
+   left:-100%;
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+ #opora #main.positioned,
+ #opora #main-lessons.positioned,
+#opora  #main-tests.positioned,
+ #opora #main-themes.positioned{
+   margin-left: -100%;
+   width: 100%;
+   transition: 0.1s linear;
+ }
+ #opora #main-tests{
+   height: 100%;
+ }
+ #opora.blue #main.positioned,
+ #opora.blue #main-tests.positioned,
+ #opora.blue #main-themes.positioned,
+ #opora.blue #main-lessons.positioned{
+   margin-left: -100%;
+   width: 100%;
+   transition: 0.1s linear;
+ }
+ #opora #main-lessons table{
+   padding: 0px;
+ }
+ #opora #main-lessons h2.zhirniy{
+   width: auto;
+   border:none;
+   font-size: 26px;
+ }
+ #opora #main-lessons td{
+   font-size: 16px;
+   padding: 2px 0 2px 0;
+ }
+ #opora #main h2{
+   padding: 20px;
+ }
+ #opora #main-tests .leftmain{
+   height: 100%;
+   width: 100%;
+   float: none;
+ }
+ #opora #main-tests .leftmain table{
+   font-size: 27px;
+   display: flex;
+   justify-content: center;
+   border-spacing: 5px 5px;
+ }
+ #opora #main-tests .rightmain table{
+   font-size: 27px;
+   display: flex;
+   justify-content: center;
+   border-spacing: 5px 5px;
+ }
+ #opora #main-tests .rightmain{
+   height: 100%;
+   width: 100%;
+   float: none;
+ }
+ #opora #main h1{
+   margin-left: 35px;
+   margin-top:0;
+ }
+ .themes{
+   margin:0;
+   width: 100%;
+   height: 200px;
+ }
+ .themes img{
+   width: 100%;
+   height: 200px;
+ }
+}
+@media all and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
+  .kana{
+    display: block;
+  }
+  .kana table {
+    font-size: 28px;
+    justify-content: center;
+    border-spacing: 5px 5px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+ #opora #sidebar{
+   width: 20%;
+   left: -20%;
+ }
+ #opora #fixed-bg{
+   background: url(https://farm8.static.flickr.com/7401/27292189706_f4cd546392_b.jpg);
+         position: fixed;
+          background-size: cover;
+          width: 100vw;
+   height: 100vh;
+   z-index: -1;
+}
+ #opora  #main.positioned,
+ #opora  #main-tests.positioned,
+ #opora  #main-lessons.positioned,
+#opora   #main-themes.positioned{
+ width: 80%;
+ margin-left: 20%;
+ }
+ #opora.blue #main.positioned,
+ #opora.blue #main-themes.positioned,
+ #opora.blue #main-lessons.positioned,
+ #opora.blue #main-tests.positioned{
+   width: 80%;
+   margin-left: 20%;
+ }
+}
+@media all and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
+ #opora #sidebar{
+   width: 15%;
+   left: -15%;
+ }
+ #opora #fixed-bg{
+   background: url(http://wallpapersite.com/images/wallpapers/mount-fuji-1024x768-volcano-japan-4k-2628.jpg);
+         position: fixed;
+          background-size: cover;
+          width: 100vw;
+   height: 100vh;
+   z-index: -1;
+}
+ #opora #main.positioned,
+ #opora #main-tests.positioned,
+ #opora #main-lessons.positioned,
+ #opora #main-themes.positioned{
+ width: 85%;
+ margin-left: 15%;
+ }
+ #opora.blue #main.positioned,
+ #opora.blue #main-themes.positioned,
+ #opora.blue #main-lessons.positioned,
+ #opora.blue #main-tests.positioned{
+   width: 85%;
+   margin-left: 15%;
+ }
+}
+@media all and (min-width:481px) and (max-width:600px) and (orientation:portrait){
+  .kana{
+    display: block;
+  }
+  .kana table {
+    font-size: 28px;
+    justify-content: center;
+    border-spacing: 5px 5px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+#opora.opora #main,
+#opora.opora #main-lessons,
+#opora.opora #main-tests,
+#opora.opora #main-themes{
+  height: 100%;
+  width: 100%;
+  margin-left: 0%;
+}
+#opora.opora #menu-opora{
+  display: inline-block;
+}
+#opora.opora #nv ul{
+  display: none;
+  position: relative;
+top: 50px;
+}
+#opora.opora #nv ul li{
+border-bottom: 1px solid;
+padding: 0;
+}
+#opora.opora #nv ul li:nth-child(1){
+border-top: 1px solid;
+}
+#opora.opora #nv ul.visible{
+  display: block!important;
+}
+#opora.opora #nv ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    background: #EA6045;
+border-bottom: 1px solid black;
+line-height: 50px;
+}
+#opora.opora #nv ul li a:hover{
+   background: crimson;
+}
+#opora  #main-lessons table.present tr td{
+   border: 0;
+   text-align: center;
+   font-size: 25px;
+ }
+#opora  #sidebar-btn{
+   right: -100%;
+   transition: 0.1s linear;
+   background: white;
+   height: 36px;
+   width: 36px;
+   border-radius: 100%;
+   opacity: 0.7;
+  margin: 20% 0 0 0;
+ }
+#opora  #sidebar.visible #sidebar-btn{
+   right: 0;
+ }
+ #opora.blue #sidebar-btn span:nth-child(2){
+   border:1px solid white;
+ }
+ #opora.blue #sidebar-btn{
+   background: black;
+ }
+ #opora.blue #sidebar-btn span:nth-child(1){
+   background: white;
+ }
+ #opora.blue #sidebar-btn span:nth-child(3){
+   background: white;
+ }
+ #sidebar-btn span{
+   margin-top: 5px;
+   background: black;
+   margin-bottom: 4px;
+   display: block;
+ }
+ #opora #main,
+ #opora #main-lessons,
+ #opora #main-tests,
+ #opora #main-themes{
+   background-color: rgba(0, 0, 0, 0.5);
+   transition: 0.1s linear;
+ }
+ #opora #sidebar ul li a{
+   font-size: 40px;
+ }
+ #opora #main-lessons table tr td b{
+   font-size: 16px;
+ }
+ #opora #fixed-bg{
+   background: url(http://www.inspiringwallpapers.net/content/uploads/download-iPhone-6Plus/mt-fuji-japan-view-from-kitadake-fuji-red-fuji.jpg);
+   position: fixed;
+   background-size: cover;
+   width: 100vw;
+   height: 100vh;
+   z-index: -1;
+}
+#opora  #sidebar-btn span:nth-child(1){
+   height: 0;
+ }
+#opora  #sidebar-btn span:nth-child(2){
+   border: 1px solid;
+   border-radius: 100%;
+   background: transparent;
+   width: 28px;
+   margin-left: 3px;
+   height: 28px;
+   margin-top: -2px;
+ }
+ #opora #sidebar-btn span:nth-child(3){
+   height: 0;
+ }
+ #opora #main-lessons b{
+   font-size: 16px;
+ }
+ #opora #main-lessons h3{
+   font-size: 16px;
+   margin-left: 5%;
+   margin-right: 5%;
+ }
+ #opora #main-lessons h3.nachalo{
+   font-size: 14px;
+   text-transform: uppercase;
+ }
+ #opora #sidebar{
+   width: 100%;
+   left:-100%;
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+ #opora #sidebar ul li:nth-child(1){
+     margin-top:20%;
+ }
+ #opora #main.positioned,
+ #opora #main-lessons.positioned,
+#opora  #main-tests.positioned,
+#opora  #main-themes.positioned{
+   margin-left: -100%;
+   width: 100%;
+   transition: 0.1s linear;
+ }
+#opora  #main-tests{
+   height: 100%;
+ }
+ #opora.blue #main.positioned,
+ #opora.blue #main-tests.positioned,
+ #opora.blue #main-themes.positioned,
+ #opora.blue #main-lessons.positioned{
+   margin-left: -100%;
+   width: 100%;
+   transition: 0.1s linear;
+ }
+#opora  #main-lessons table{
+   padding: 0px;
+ }
+#opora  #main-lessons h2.zhirniy{
+   width: auto;
+   border:none;
+   font-size: 26px;
+ }
+#opora  #main-lessons td{
+   font-size: 25px;
+   padding: 2px 0 2px 0;
+ }
+#opora  #main h2{
+   padding: 20px;
+ }
+#opora  #main-tests .leftmain{
+   height: 100%;
+   width: 100%;
+   float: none;
+ }
+ #opora #main-tests .leftmain table{
+   font-size: 27px;
+   display: flex;
+   justify-content: center;
+   border-spacing: 5px 5px;
+ }
+#opora  #main-tests .rightmain table{
+   font-size: 27px;
+   display: flex;
+   justify-content: center;
+   border-spacing: 5px 5px;
+ }
+ #opora #main-tests .rightmain{
+   height: 100%;
+   width: 100%;
+   float: none;
+ }
+#opora  #main h1{
+   margin-left: 35px;
+   margin-top:0;
+ }
+ .themes{
+   margin:0;
+   width: 100%;
+   height: 200px;
+ }
+ .themes img{
+   width: 100%;
+   height: 200px;
+ }
+}
